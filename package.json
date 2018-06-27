@@ -1,0 +1,15 @@
+{
+    "scripts": {
+        "build": "gulp build"
+    },
+    "devDependencies": {
+        "babel-core": "*",
+        "babel-preset-es2015": "*",
+        "gulp-autoprefixer": "*",
+        "gulp-babel": "^7.0.1",
+        "gulp-clean-css": "*",
+        "gulp-htmlmin": "*",
+        "gulp-sass": "^4.0.1",
+        "gulp-uglify": "*"
+    }
+}

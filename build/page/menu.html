@@ -1,0 +1,5 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Document</title><script src="../js/lib/require.js"></script><link rel="stylesheet" href="../css/menu.css"><script>require(['../js/config'], function() {
+            require(['menu'])
+        })</script></head><body><div class="wrap"><header class="header lr"><a href="javascript:history.back()" class="top__back"></a><p class="header-title">目录</p><a href="http://localhost:6060" class="home"></a></header><main class="main"><ul class="list"></ul></main></div><script class="text" type="text/x-handlebars-template">{{#each this}}
+        <li class="{{#if active}}active{{/if}}"><span>{{title}}</span>{{#if free}}<em>免费</em>{{/if}}</li>
+        {{/each}}</script></body></html>

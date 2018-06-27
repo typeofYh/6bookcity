@@ -1,0 +1,6 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Page Title</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../css/text.css"><script src="../js/lib/require.js"></script><script>require(['../js/config'], function() {
+            require(['reader'])
+        })</script></head><body><div class="wrap"><div class="menu" style="display: none;"><div class="top"><span>返回</span></div><div class="bottom"><div class="bot-top"><p class="prev-btn">上一章</p><p><b class="cur">1</b>/<b class="sum"></b></p><p class="next-btn">下一章</p></div><div class="config-box" style="display:none;"><h2>字体</h2><button>大</button> <button>小</button><p class="color-box"></p></div><ul class="bot-bottom"><li class="menu-btn">目录</li><li>字体</li><li>夜间</li><li>下载</li></ul></div></div><div class="content"></div></div><script class="text" type="text/x-handlebars-template"><h2>{{t}}</h2>
+        {{#each p}}
+        <p>{{this}}</p>
+        {{/each}}</script></body></html>

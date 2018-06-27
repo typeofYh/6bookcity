@@ -1,0 +1,8 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Page Title</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../css/search.css"><script src="../js/lib/require.js"></script><script>require(['../js/config'], function() {
+            require(['search'])
+        })</script></head><body><div class="wrap"><header class="header"><a href="javascript:history.back()" class="top__back"></a><div id="search-input" class="search-input"><b class="search-input__mi"></b> <input type="text" value="" placeholder="输入书名/作者/关键字"><div class="search-input__btn">搜索</div></div></header><div class="search-cont"><div class="search-init"></div><div class="search-history"><h2 class="title">历史记录</h2><ul class="history-list"></ul></div></div></div><script class="text" type="text/x-handlebars-template">{{#each ads}}
+        <a href="javascript:;">{{ad_name}}</a> {{/each}}</script><script class="historytext" type="text/x-handlebars-template">{{#each this}}
+        <li>
+            <p>{{this}}</p><em class="removebtn" data-ind="{{@index}}">&times;</em>
+        </li>
+        {{/each}}</script></body></html>
